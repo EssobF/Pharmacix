@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="486.0" prefWidth="611.0" stylesheets="@styles2.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pharmacix.VenteTotaleController">
+    <top>
+        <ToolBar>
+            <Button fx:id="menuview" onAction="#menuview" prefHeight="30.0" prefWidth="80.0" text="Menu" />
+            <Button fx:id="venteview" onAction="#venteview" text="Vente" />
+
+        </ToolBar>
+    </top>
+
+    <center>
+        <TableView fx:id="tableVenteTotale" prefHeight="400.0" prefWidth="680.0">
+            <columns>
+                <TableColumn fx:id="TotalVenduColumn" prefWidth="180" text="Qté totale vendue" />
+                <TableColumn fx:id="fk_numMedicamentColumn" prefWidth="120" text="N° Médicament" />
+                <TableColumn fx:id="fk_nomMedicamentColumn" prefWidth="180" text="Nom Médicament"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+</BorderPane>
